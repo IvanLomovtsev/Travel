@@ -48,3 +48,71 @@ nav ul {
     border-radius: 10px;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 25%), 0 2px 3px rgba(13, 96, 111, 16%);
 }
+.explore {
+    margin-top: 32px;
+    margin-left: 120px;
+    width: 892px;
+    height: 422px;
+    color: #FFFFFF
+}
+.explore h1 {
+    margin: 0px;
+    font-family: 'Aleo', serif;
+    font-size: 80px;
+    font-weight: bold;
+}
+.explore p {
+    margin-top: 46px;
+    margin-bottom: 46px;
+    font-family: 'Aleo', serif;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+}
+.search {
+    width: 892px;
+    height: 95px;
+    background-color: rgba(255, 255, 255, 70%);
+    border:none;
+    border-radius: 16px;
+}
+.text_start {
+    margin-top: 32px;
+    margin-left: 41px;
+    width: 560px;
+    color: #F2785C;
+    font-family: 'Aleo', serif;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: bold; 
+    background: none;
+    border: none;
+    outline: none;
+}
+.text_start::-webkit-input-placeholder {
+    color:#F2785C;
+}
+.text_start::-moz-placeholder {
+    color:#F2785C;
+}
+.text_start:-moz-placeholder {
+    color:#F2785C;
+}
+.text_start:-ms-input-placeholder {
+    color:#F2785C;
+}
+.btn_start {
+    width: 228px;
+    height: 59px;
+    margin-top: 18px;
+    margin-right: 18px;
+    float: right;
+    color: #FFFFFF;
+    font-family: 'Red Hat Text', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #0D606F;
+    border:none;
+    border-radius: 10px;
+    box-shadow: 0 0 3px rgba(13, 96, 111, 8%), 0 0 3px rgba(13, 96, 111, 16%);
+}
