@@ -131,6 +131,7 @@ ul a {
     text-transform: uppercase;
     font-family: 'Red Hat Text', sans-serif;
     font-size: 40px;
+    font-weight: 500;
     text-align: center;
 }
 .steps_of_trip {
