@@ -24,16 +24,21 @@ header {
     align-items: center;
 }
 nav ul {
-    color: #FFFFFF;
-    font-family: 'Red Hat Text', sans-serif;
-    font-size: 16px;
-    font-weight: bold;
     width: 527px;
     margin:auto;
+    padding: 0;
+    margin-left:-40px;
     list-style-type: none;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+ul a {
+    color: #FFFFFF;
+    font-family: 'Red Hat Text', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
 }
 .btn_login {
     width: 103px;
@@ -61,7 +66,7 @@ nav ul {
     font-weight: bold;
 }
 .explore p {
-    margin-top: 46px;
+    margin-top: 33px;
     margin-bottom: 46px;
     font-family: 'Aleo', serif;
     font-size: 20px;
@@ -83,7 +88,7 @@ nav ul {
     font-family: 'Aleo', serif;
     font-size: 24px;
     font-style: italic;
-    font-weight: bold; 
+    font-weight: 500; 
     background: none;
     border: none;
     outline: none;
@@ -108,19 +113,20 @@ nav ul {
     color: #FFFFFF;
     font-family: 'Red Hat Text', sans-serif;
     font-size: 24px;
-    font-weight: bold;
+    font-weight: 500;
     background-color: #0D606F;
     border:none;
     border-radius: 10px;
     box-shadow: 0 0 3px rgba(13, 96, 111, 8%), 0 0 3px rgba(13, 96, 111, 16%);
 }
 .steps {
-    width: 1177px;
+    width: 100%;
     margin:auto;
     margin-top: 80px;
     margin-bottom: 97px;
 }
 .headline {
+    margin: 0;
     color: #F2785C;;
     text-transform: uppercase;
     font-family: 'Red Hat Text', sans-serif;
@@ -128,16 +134,24 @@ nav ul {
     text-align: center;
 }
 .steps_of_trip {
+    width: 1177px;
+    margin: auto;
+    margin-top: 40px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
 }
+
 .card {
     width: 317px;
     height: 154px;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.card:first-child {
+    width: 247px;
+    margin-right: 70px;
 }
 .card div {
     width: 100px;
@@ -152,7 +166,7 @@ nav ul {
 .card p {
     margin: 0;
     font-family: 'Aleo', serif;
-    font-size: 15px;
+    font-size: 20px;
     color:#0D606F;
     font-weight: 500px;
     padding: 0;
@@ -172,6 +186,7 @@ nav ul {
 }
 .cards_of_place {
     width:2520px;
+    margin-top: 45px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -180,11 +195,12 @@ nav ul {
     position: relative; 
 }
 .place p {
-    margin:0;
+    margin: 0;
     color: #FFFFFF;
     font-family: 'Red Hat Text', sans-serif;
     font-size: 32px;
     font-weight: 500;
+    text-transform: uppercase;
     position: absolute;
     top: 718px;
     left: 15px;
@@ -192,7 +208,7 @@ nav ul {
 .btn_radio {
     width: 80px;
     height: 20px;
-    margin-top: 24px;
+    margin-top: 20px;
     margin-bottom: 40px;
     display: flex;
     justify-content: space-between;
@@ -216,7 +232,7 @@ nav ul {
     color: #FFFFFF;
     font-family: 'Red Hat Text', sans-serif;
     font-size: 24px;
-    font-weight: bold;
+    font-weight: 500;
     background-color: #0D606F;
     border:none;
     border-radius: 10px;
@@ -242,7 +258,7 @@ nav ul {
 }
 .stories {
     position: absolute;
-    top: -102px;
+    top: -95px;
     left: 119.5px;
     width: 1201px;
     height: 1322px;
@@ -256,16 +272,15 @@ nav ul {
     margin-bottom: 80px;
 }
 .story {
+    height: 250px;
     margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
 }
 .story img {
     border:none;
     border-radius: 16px;
     box-shadow: 0 4px 4px rgba(13, 96, 111, 100%)
-}
-.story {
-    display: flex;
-    flex-direction: row;
 }
 .story div {
     margin-left: 40px;
@@ -275,17 +290,23 @@ nav ul {
     font-family: 'Aleo', serif;
     font-size: 35px;
     color:#0D606F;
-    font-weight: 500px;
+    font-weight: 500;
 }
 .story p {
     margin-top: 24px;
     font-family: 'Aleo', serif;
     font-size: 20px;
     color:#0D606F;
-    font-weight: 500px;
+    font-weight: 500;
 }
 .story a {
+    color:#0D606F;
     font-weight: bold;
+}
+.stories .btn_find_more {
+    margin-top: 10px;
+    padding-right: 40px; 
+    text-align: left;
 }
 footer {
     width: 100%;
