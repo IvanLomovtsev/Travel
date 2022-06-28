@@ -1,13 +1,17 @@
+html {
+    scroll-behavior: smooth;
+}
 body {
     margin: auto;
     width: 1440px;
+    scroll-behavior: smooth;
 }
-.preview {
+.main_background {
     margin: auto;
     width: 100%;
     height: 765px;
-    background-image: url('../img/garrett-parker-DlkF4-dbCOU-unsplash 1.png');
-    background-size: 1440px 765px;
+    background-image: url('../img/garrett-parker-DlkF4-dbCOU-unsplash 1.jpg');
+    background-size: cover;
 }
 header {
     width: 100%;
@@ -32,13 +36,19 @@ nav ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
-ul a {
+nav ul a {
     color: #FFFFFF;
     font-family: 'Red Hat Text', sans-serif;
     font-size: 16px;
     font-weight: 500;
     text-decoration: none;
+    transition: color 0.3s ease-in;
+}
+nav a:hover {
+    color: #17444b;
+    font-weight: 700;
 }
 .btn_login {
     width: 103px;
@@ -48,24 +58,32 @@ ul a {
     font-size: 16px;
     font-weight: bold;
     background-color: #0D606F;
+    transition: background-color 0.3s ease-in;
+    cursor: pointer;
     border:none;
     border-radius: 10px;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 25%), 0 2px 3px rgba(13, 96, 111, 16%);
 }
-.explore {
+.btn_login:hover {
+    background-color: #17444b;
+}
+.btn_login:active {
+    transform: translateY(2px);
+}
+.preview {
     margin-top: 32px;
     margin-left: 120px;
     width: 892px;
     height: 422px;
     color: #FFFFFF
 }
-.explore h1 {
+.preview h1 {
     margin: 0px;
     font-family: 'Aleo', serif;
     font-size: 80px;
     font-weight: bold;
 }
-.explore p {
+.preview p {
     margin-top: 33px;
     margin-bottom: 46px;
     font-family: 'Aleo', serif;
@@ -115,9 +133,17 @@ ul a {
     font-size: 24px;
     font-weight: 500;
     background-color: #0D606F;
+    transition: background-color 0.3s ease-in;
+    cursor: pointer;
     border:none;
     border-radius: 10px;
     box-shadow: 0 0 3px rgba(13, 96, 111, 8%), 0 0 3px rgba(13, 96, 111, 16%);
+}
+.btn_start:hover {
+    background-color: #17444b;
+}
+.btn_start:active {
+    transform: translateY(2px);
 }
 .steps {
     width: 100%;
@@ -127,7 +153,7 @@ ul a {
 }
 .headline {
     margin: 0;
-    color: #F2785C;;
+    color: #F2785C;
     text-transform: uppercase;
     font-family: 'Red Hat Text', sans-serif;
     font-size: 40px;
@@ -142,7 +168,6 @@ ul a {
     flex-direction: row;
     justify-content: space-between;
 }
-
 .card {
     width: 317px;
     height: 154px;
@@ -175,7 +200,7 @@ ul a {
 }
 .destinations {
     width: 100%;
-    height: 1042px;
+    height: 1052px;
     margin: auto;
     overflow: hidden;
     display: flex;
@@ -235,6 +260,8 @@ ul a {
     font-size: 24px;
     font-weight: 500;
     background-color: #0D606F;
+    transition: background-color 0.3s ease-in;
+    cursor: pointer;
     border:none;
     border-radius: 10px;
     box-shadow: 0 0 3px rgba(13, 96, 111, 8%), 0 2px 3px rgba(13, 96, 111, 16%);
@@ -244,12 +271,18 @@ ul a {
     justify-content: space-between;
     align-items: center;    
 }
+.btn_find_more:hover {
+    background-color: #17444b;
+}
+.btn_find_more:active {
+    transform: translateY(2px);
+}
 .background_stories_footer {
     width: 100%;
     height: 1331px;;
-    background-image: url('../img/Rectangle 33.png');
-    background-size: 1442px 1331px;
-    margin-top: 173px;  
+    background-image: url('../img/Rectangle33.jpg');
+    background-size: cover;
+    margin-top: 163px;  
 }
 .background_stories_footer>div {
     position: relative;
@@ -316,8 +349,8 @@ footer {
     justify-content: flex-end;
     align-items: center;
 }
-footer>div{
-    width: 728.96px;
+footer div{
+    width: 1198px;
     height: 33.65px;
     margin-right: 121.04px;
     color: #FFFFFF;
@@ -330,7 +363,10 @@ footer>div{
     align-items: center;
 }
 .icons {
+    padding: 0;
     width: 140.96px;
+    list-style-type: none;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
 }
