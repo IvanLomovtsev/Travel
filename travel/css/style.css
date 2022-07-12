@@ -3,45 +3,53 @@ html {
 }
 body {
     margin: auto;
-    width: 1440px;
+    max-width: 1440px;
     scroll-behavior: smooth;
 }
 .main_background {
     margin: auto;
     width: 100%;
-    height: 765px;
     background-image: url('../img/garrett-parker-DlkF4-dbCOU-unsplash 1.jpg');
     background-size: cover;
 }
 header {
     width: 100%;
-    height: 90px;
     background-color: rgba(242, 120, 92, 70%);
     box-shadow: 0 4px 4px rgba(13, 96, 111, 50%);
 }
 .header_elements {
     margin: auto;
-    padding: 25px 120px;
+    padding: 1.74% 8.33%;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
+.header_elements a img {
+    width: 100%;
+}
+.logo_mob {
+    display: none;
+}
+nav {
+    width: 41%;
+}
 nav ul {
-    width: 527px;
     margin:auto;
     padding: 0;
-    margin-left:-40px;
+    margin-left: -7%;
     list-style-type: none;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
 nav ul a {
     color: #FFFFFF;
     font-family: 'Red Hat Text', sans-serif;
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 500;
     text-decoration: none;
     transition: color 0.3s ease-in;
@@ -55,7 +63,7 @@ nav a:hover {
     height: 41px;
     color: #FFFFFF;
     font-family: 'Red Hat Text', sans-serif;
-    font-size: 16px;
+    font-size: 1em;
     font-weight: bold;
     background-color: #0D606F;
     transition: background-color 0.3s ease-in;
@@ -70,41 +78,91 @@ nav a:hover {
 .btn_login:active {
     transform: translateY(2px);
 }
+@media screen and (max-width: 750px) and (min-width: 391px) {
+    .header_elements {
+        display: flex;
+        flex-direction: column;
+    }
+    nav {
+        width: 100%;
+    }
+    nav ul {
+        margin: 2% 0;
+        justify-content: center;
+    }
+    nav ul a {
+        margin-right: 10px;
+    }
+}
+@media screen and (max-width: 390px) {
+    .main_background {
+        background-image: url('../img/garrett-parker-DlkF4-dbCOU-unsplash_2mob.png');
+    }
+    header {
+        background-color: rgba(242, 120, 92, 0%);
+        box-shadow: none;
+    }
+    .header_elements {
+        padding: 0;
+        width: 92.3%;
+        margin: auto;
+        padding-top: 43px;
+        padding-bottom: 70px;
+        display: flex;
+        flex-direction: row;
+    }
+    .logo {
+        display: none;
+    }
+    .logo_mob {
+        display: block;
+    }
+    nav {
+        display: none;
+    }
+    .btn_login {
+        display: none;
+    }
+}
 .preview {
-    margin-top: 32px;
-    margin-left: 120px;
-    width: 892px;
-    height: 422px;
+    width: 62%;
+    margin-top: 2.22%;
+    margin-left: 8.33%;
+    padding-bottom: 17.6%;
     color: #FFFFFF
 }
 .preview h1 {
-    margin: 0px;
+    margin: 0;
     font-family: 'Aleo', serif;
-    font-size: 80px;
+    font-size: 5em;
     font-weight: bold;
 }
 .preview p {
-    margin-top: 33px;
-    margin-bottom: 46px;
+    margin-top: 3.5%;
+    margin-bottom: 5%;
     font-family: 'Aleo', serif;
-    font-size: 20px;
+    font-size: 1.25em;
     font-weight: bold;
     font-style: italic;
 }
 .search {
     width: 100%;
-    height: 95px;
     background-color: rgba(255, 255, 255, 70%);
     border:none;
-    border-radius: 16px;
+    border-radius: 16px;  
+}
+.search form {
+    display: flex;
+    align-items: center;
 }
 .text_start {
-    margin-top: 32px;
-    margin-left: 41px;
-    width: 560px;
+    margin-top: 3.5%;
+    margin-left: 4.5%;
+    margin-bottom: 4%;
+    width: 65%;
     color: #F2785C;
     font-family: 'Aleo', serif;
-    font-size: 24px;
+    font-size: 1.5em;
     font-style: italic;
     font-weight: 500; 
     background: none;
@@ -124,13 +182,13 @@ nav a:hover {
     color:#F2785C;
 }
 .btn_start {
-    width: 228px;
-    height: 59px;
-    margin: 18px;
+    width: 25.5%;
+    margin: 2%;
+    padding: 1.5% 1.5%;
     float: right;
     color: #FFFFFF;
     font-family: 'Red Hat Text', sans-serif;
-    font-size: 24px;
+    font-size: 1.5em;
     font-weight: 500;
     background-color: #0D606F;
     transition: background-color 0.3s ease-in;
@@ -145,11 +203,57 @@ nav a:hover {
 .btn_start:active {
     transform: translateY(2px);
 }
+@media screen and (max-width: 750px) and (min-width: 391px) {
+    .preview {
+        width:80%;
+        margin: auto;
+        margin-top: 2.22%;
+    }
+    .preview h1 {
+        font-size: 2em;
+    }
+    .preview p {
+        font-size: 0.8em;
+    }
+    .text_start {
+        font-size: 1em;
+        margin: 4% 2%;
+    }
+    .btn_start {
+        font-size: 0.7em;
+        margin: 1.25%;
+        padding: 2%;
+    }
+}
+@media screen and (max-width: 390px) {
+    .preview {
+        width: 92.3%;
+        margin: auto;
+        padding-bottom: 61px;
+        border-radius: 4%;
+    }
+    .preview h1, .preview p {
+        display: none;
+    }
+    .text_start {
+        font-size: 14px;
+        margin: 3.7% 2%;
+        padding-left: 2.5%;
+        padding-top: 1%;
+    }
+    .btn_start {
+        width: 92px;
+        height: 30px;
+        font-size: 11px;
+        margin: 0;
+        padding: 2%;
+    }
+}
 .steps {
     width: 100%;
-    margin:auto;
-    margin-top: 80px;
-    margin-bottom: 97px;
+    margin: auto;
+    margin-top: 5.55%;
+    margin-bottom: 6.74%;
 }
 .headline {
     margin: 0;
@@ -161,23 +265,23 @@ nav a:hover {
     text-align: center;
 }
 .steps_of_trip {
-    width: 1177px;
+    width: 81.7%;
     margin: auto;
-    margin-top: 40px;
+    margin-top: 2.7%;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 .card {
-    width: 317px;
-    height: 154px;
+    width: 27%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .card:first-child {
-    width: 247px;
-    margin-right: 70px;
+    width: 21%;
+    margin-right: 6%;  
 }
 .card div {
     width: 100px;
@@ -194,13 +298,98 @@ nav a:hover {
     font-family: 'Aleo', serif;
     font-size: 20px;
     color:#0D606F;
-    font-weight: 500px;
+    font-weight: 500;
     padding: 0;
-    padding-top: 30px;
+    padding-top: 9.5%;
+    text-align: center;
+}
+.card:first-child p {
+    padding-top: 12%; 
+}
+@media screen and (max-width: 750px) and (min-width: 391px) {
+    .headline {
+        font-size: 1.4em;
+    }
+    .steps_of_trip {
+        width:80%;
+    }
+    .card { 
+        width: 30%;
+    }
+    .card:first-child {
+        width: 30%;
+        margin-right: 0;
+    }
+    .card div {
+        width:50px;
+        height: 50px;
+    }
+    .card div img {
+        width: 50%;
+    }
+    .card p {
+        font-size: 70%;
+        text-align: center;
+    }
+    .card:first-child p {
+        padding-top: 9.5%;    
+    }
+}
+@media screen and (max-width: 390px) {
+    .headline {
+        font-size: 14px;
+    }
+    .steps {
+        margin-top: 5%;
+        margin-bottom: 5.5%;
+    }
+    .steps_of_trip {
+        width: 92.3%;
+        margin-top: 5%;
+    }
+    .card {
+        width: 35%;
+    }
+    .card div { 
+        width: 70px;
+        height: 70px;
+    }
+    .card div img {
+        width: 30%;
+    }
+    .card:first-child {
+        align-items: flex-start;
+    }
+    .card:first-child p {
+        text-align: left; 
+        padding: 0;  
+    }
+    .card:first-child img {
+        width: 50%;  
+    }
+    .card:nth-child(2) img {
+        width: 50%;
+    }
+    .card:last-child {
+        width: 26%;
+        align-items: flex-end;
+    }
+    .card:last-child p {
+        text-align: right;    
+    }
+    .card:last-child img {
+        width: 55%;    
+    }
+    .card p {
+        padding: 0;
+        margin-top: 20px;
+        font-size: 10px;
+        text-align: center;
+    }
 }
 .destinations {
+    margin-top: 0px;
     width: 100%;
-    height: 1052px;
     margin: auto;
     overflow: hidden;
     display: flex;
@@ -211,31 +400,48 @@ nav a:hover {
     margin-top: 0px;
 }
 .cards_of_place {
-    width:2520px;
-    margin-top: 45px;
+    width:175%;
+    margin-top: 3.12%;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 .place {
     position: relative; 
 }
+.place_mob {
+    display: none;
+}
+.place img {
+    width: 100%;
+    height: 800px;
+}
 .place p {
     margin: 0;
     color: #FFFFFF;
     font-family: 'Red Hat Text', sans-serif;
-    font-size: 32px;
+    font-size: 2em;
     font-weight: 500;
     text-transform: uppercase;
     position: absolute;
-    top: 718px;
-    left: 15px;
+    top: 89%;
+    left: 2%;
+}
+@media screen and (max-width: 1390px) and (min-width: 391px) {
+    .place img {
+        width: 55vw;
+        height: 55vw;
+    }
+    .place p {
+        font-size: 3vw;
+    }
 }
 .btn_radio {
     width: 80px;
     height: 20px;
-    margin-top: 20px;
-    margin-bottom: 40px;
+    margin-top: 1.2%;
+    margin-bottom: 2.9%;
     display: flex;
     justify-content: space-between;
 }
@@ -252,6 +458,15 @@ nav a:hover {
 .btn_radio input:checked {
     background-color: rgba(242, 120, 92, 100%);
 }
+@media screen and (max-width: 1390px) and (min-width: 391px) {
+    .btn_radio {
+        width: 10vw;
+    }
+    .btn_radio input {
+        width: 2vw;
+        height: 2vw;
+    }
+}
 .btn_find_more {
     width: 228px;
     height: 59px;
@@ -266,10 +481,11 @@ nav a:hover {
     border-radius: 10px;
     box-shadow: 0 0 3px rgba(13, 96, 111, 8%), 0 2px 3px rgba(13, 96, 111, 16%);
     text-align: center;
-    padding: 9.5px 31px;
     display: flex;
     justify-content: space-between;
-    align-items: center;    
+    align-items: center;  
+    margin: 0 auto 2.5% auto;
+    padding: 2% 2.45%;  
 }
 .btn_find_more:hover {
     background-color: #17444b;
@@ -277,47 +493,99 @@ nav a:hover {
 .btn_find_more:active {
     transform: translateY(2px);
 }
+.btn_find_more img {
+    width: 25%;
+}
+@media screen and (max-width: 1390px) and (min-width: 391px) {
+    .btn_find_more {
+        width: 20vw;
+        font-size: 0.7em;
+    }
+}
+@media screen and (max-width: 390px) {
+    .cards_of_place {
+        width: 93%;
+        margin-top: 5%;
+        margin-bottom: 2.5%;
+    }
+    .place img {
+        width: 100%;
+        height: auto;
+    }
+    .place_desktop {
+        display: none;
+    }
+    .place_mob {
+        display: block; 
+    }
+    .place p {
+        top: 4%;
+        left: 4%;
+        font-size: 20px;
+    }
+    .btn_radio {
+        position: absolute;
+        top: 117%;
+        left: 45%;
+        width: 37px;
+        height: 8px;
+    }
+    .btn_radio input {
+        width: 8px;
+        height: 8px;
+    }
+    .btn_find_more {
+        width: 92px;
+        height: 30px;
+        font-size: 11px;
+    }
+    .btn_find_more img {
+        width: 20%;
+    }
+}
+.headline_and_stories h2 {
+    margin-top: 5.5%;
+}
 .background_stories_footer {
     width: 100%;
-    height: 1331px;;
     background-image: url('../img/Rectangle33.jpg');
     background-size: cover;
-    margin-top: 163px;  
-}
-.background_stories_footer>div {
-    position: relative;
-    width:100%;
-    height: 1270px;
-    background-color: rgba(255, 255, 255, 70%);
+    margin-top: 2.8%;
 }
 .stories {
-    position: absolute;
-    top: -93px;
-    left: 119.5px;
-    width: 1201px;
-    height: 1322px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 70%);
+    padding-top: 2.8%;
     margin: auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
 }
-.stories h2 {
-    margin-top: 0px;
-    margin-bottom: 80px;
+.stories .btn_find_more {
+    margin-top: 1%;    
 }
 .story {
-    height: 250px;
-    margin-bottom: 30px;
+    width: 83%;
+    margin: auto;
+    margin-bottom: 1.78%;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
-.story img {
+.story_desktop {
+    width: 33.4%;
+    height: 33.4%;
     border:none;
     border-radius: 16px;
-    box-shadow: 0 4px 4px rgba(13, 96, 111, 100%)
+    box-shadow: 0 4px 4px rgba(13, 96, 111, 100%);
+}
+.story_mobile {
+    display: none;
 }
 .story div {
-    margin-left: 40px;
+    width: 63.2%;
+    margin-left: 3.4%;
 }
 .story h3 {
     margin: 0;
@@ -326,47 +594,136 @@ nav a:hover {
     color:#0D606F;
     font-weight: 500;
 }
-.story p {
-    margin-top: 24px;
+.p_desktop {
+    margin-top: 3.2%;
     font-family: 'Aleo', serif;
     font-size: 20px;
     color:#0D606F;
     font-weight: 500;
+    line-height: 120%;
+}
+.p_mobile {
+    margin-top: 3.2%;
+    font-family: 'Aleo', serif;
+    font-size: 20px;
+    color:#0D606F;
+    font-weight: 500;
+    line-height: 120%;
+    display: none;
 }
 .story a {
     color:#0D606F;
     font-weight: bold;
 }
-.stories .btn_find_more {
-    margin-top: 10px;
-    padding-right: 40px; 
-    text-align: left;
+@media screen and (max-width: 750px) and (min-width: 391px) {
+    .story h3 {
+        font-size: 1.3em;
+    }
+    .story p {
+        font-size: 0.8em;
+    }
+}
+@media screen and (max-width: 390px) {
+    .story {
+        width: 93%;
+        margin-bottom: 2%;
+    }
+    .story_desktop {
+        display: none;
+    }
+    .story_mobile {
+        display: block;
+        width: 155px;
+        height: 130px;
+        height: auto;
+        border-radius: 16px;
+        box-shadow: 0 4px 4px rgba(13, 96, 111, 100%);
+    }
+    .story div {
+        width: 53.56%;
+    }
+    .story h3 {
+        font-size: 11px;
+        font-weight: bold;
+        padding: 0;
+        margin-top: 1.5%;
+    }
+    .p_desktop {
+        display: none;
+    }
+    .p_mobile {
+        display: block;
+        font-size: 9px;
+        margin-top: 7%;
+    }
+    .stories .btn_find_more {
+        margin-top: 0%;
+    }
 }
 footer {
     width: 100%;
-    height: 61px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
 footer div{
-    width: 1198px;
-    height: 33.65px;
-    margin-right: 121.04px;
+    width: 83.2%;
+    margin-right: 8.4%;
     color: #FFFFFF;
     font-family: 'Red Hat Text', sans-serif;
     font-size: 16px;
     font-weight: 500;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
 .icons {
     padding: 0;
-    width: 140.96px;
+    width: 11.7%;
     list-style-type: none;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
+}
+.icons_mobile {
+    display: none;
+}
+@media screen and (max-width: 1390px) and (min-width: 391px) {
+    footer div {
+        font-size: 0.6em;
+    }
+    .icons {
+        width: 20vw;
+    }
+    .icon {
+        width: 6vw;
+    }
+}
+@media screen and (max-width: 390px) {
+    footer p {
+        display: none;
+    }
+    .background_stories_footer {
+        width: 100%;
+        background-image: url('../img/Rectangle28.jpg');
+    }
+    .icons {
+        display: none;
+    }
+    .icons_mobile {
+        width: 92.3%;
+        margin: auto;
+        margin-top: 15px;
+        margin-bottom: 16px;
+        padding: 0;
+        display: block;
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 }
