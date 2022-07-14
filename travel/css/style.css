@@ -107,7 +107,7 @@ nav a:hover {
         width: 92.3%;
         margin: auto;
         padding-top: 43px;
-        padding-bottom: 70px;
+        padding-bottom: 67px;
         display: flex;
         flex-direction: row;
     }
@@ -341,11 +341,11 @@ nav a:hover {
     }
     .steps {
         margin-top: 5%;
-        margin-bottom: 5.5%;
+        margin-bottom: 5%;
     }
     .steps_of_trip {
         width: 92.3%;
-        margin-top: 5%;
+        margin-top: 6%;
     }
     .card {
         width: 35%;
@@ -382,7 +382,7 @@ nav a:hover {
     }
     .card p {
         padding: 0;
-        margin-top: 20px;
+        margin-top: 19px;
         font-size: 10px;
         text-align: center;
     }
@@ -437,7 +437,7 @@ nav a:hover {
         font-size: 3vw;
     }
 }
-.btn_radio {
+.btn_radio_desktop {
     width: 80px;
     height: 20px;
     margin-top: 1.2%;
@@ -445,7 +445,13 @@ nav a:hover {
     display: flex;
     justify-content: space-between;
 }
-.btn_radio input {
+.btn_radio_mobile {
+    width: 37px;
+    height: 8px;
+    margin-top: 1.2%;
+    margin-bottom: 2.9%;
+}
+.btn_radio_desktop input, .btn_radio_mobile input {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -455,14 +461,23 @@ nav a:hover {
     border-radius: 50%;
     background-color: rgba(242, 120, 92, 50%);
 }
-.btn_radio input:checked {
+.btn_radio_desktop input:checked, .btn_radio_mobile input:checked {
     background-color: rgba(242, 120, 92, 100%);
 }
+.left_vector {
+    display: none;
+}
+.right_vector {
+    display: none;
+}
+.btn_radio_mobile {
+    display: none;
+}
 @media screen and (max-width: 1390px) and (min-width: 391px) {
-    .btn_radio {
+    .btn_radio_desktop {
         width: 10vw;
     }
-    .btn_radio input {
+    .btn_radio_desktop input {
         width: 2vw;
         height: 2vw;
     }
@@ -523,14 +538,21 @@ nav a:hover {
         left: 4%;
         font-size: 20px;
     }
-    .btn_radio {
-        position: absolute;
-        top: 117%;
-        left: 45%;
-        width: 37px;
-        height: 8px;
+    .cards_of_place {
+        position: relative;
     }
-    .btn_radio input {
+    .btn_radio_desktop {
+        display: none;
+    }
+    .btn_radio_mobile {
+        display: block;
+        position: absolute;
+        top: 87%;
+        left: 45%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .btn_radio_mobile input {
         width: 8px;
         height: 8px;
     }
@@ -541,6 +563,19 @@ nav a:hover {
     }
     .btn_find_more img {
         width: 20%;
+    }
+    .left_vector {
+        display: block;
+        position: absolute;
+        top: 44%;
+        left: 3%;
+    }
+    .right_vector {
+        display: block;
+        display: block;
+        position: absolute;
+        top: 44%;
+        right: 3%;
     }
 }
 .headline_and_stories h2 {
@@ -624,9 +659,12 @@ nav a:hover {
     }
 }
 @media screen and (max-width: 390px) {
+    .stories {
+        padding-top: 2%;
+    }
     .story {
         width: 93%;
-        margin-bottom: 2%;
+        margin-bottom: 4%
     }
     .story_desktop {
         display: none;
@@ -634,19 +672,19 @@ nav a:hover {
     .story_mobile {
         display: block;
         width: 155px;
-        height: 130px;
         height: auto;
         border-radius: 16px;
         box-shadow: 0 4px 4px rgba(13, 96, 111, 100%);
     }
     .story div {
         width: 53.56%;
+        margin-left: 0;
     }
     .story h3 {
         font-size: 11px;
         font-weight: bold;
         padding: 0;
-        margin-top: 1.5%;
+        margin-top: 3%;
     }
     .p_desktop {
         display: none;
@@ -654,10 +692,12 @@ nav a:hover {
     .p_mobile {
         display: block;
         font-size: 9px;
-        margin-top: 7%;
+        margin: 0;
+        margin-top: 5.6%;
     }
     .stories .btn_find_more {
-        margin-top: 0%;
+        margin-top: -2%;
+        margin-bottom: 3.2%;
     }
 }
 footer {
