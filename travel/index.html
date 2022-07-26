@@ -25,7 +25,7 @@
                     </ul>
                 </nav>
                 <form>
-                    <button class="btn_login">Login</button>
+                    <button id="myBtn" class="btn_login" type="button">Login</button>
                 </form>
                 <div class="burger_menu">
                     <input id="menu" type="checkbox">
@@ -37,26 +37,66 @@
                         <li><a class="menu_item" href="#destinations">Destinations</a></li>
                         <li><a class="menu_item" href="#plan_trip">Plan Your Trip</a></li>
                         <li><a class="menu_item" href="#stories">Travel Stories</a></li>
-                        <li><a class="menu_item" href="#accaunt">Accaunt</a></li>
+                        <li><a class="menu_item" id="accaunt">Accaunt</a></li>
                         <li><a class="menu_item" href="#media">Social Media</a></li>
                     </ul>
                 </div>
             </div>
         </header>
+        <div class="pop_up">
+            <div class="login_pop_up">
+                <h3 class="head_pop_up login">Log in to your account</h3>
+                <h3 class="head_pop_up register">Create account</h3>
+                <form>
+                    <button class="btn_facebook login" type="button">
+                        <img class="logo_pop_up" src="img/fb.svg" alt="icon_facebook" width="23" height="22">
+                        Sign In with Facebook</button>
+                </form>
+                <form>
+                    <button class="btn_google login" type="button">
+                        <img class="logo_pop_up" src="img/Google_Logo.svg" alt="icon_google" width="24" height="24">
+                        Sign In with Google</button>
+                </form>
+                <div class="sep_pop_up login">
+                    <div class="line"><hr noshade color="#0D606F" size="1"></div>
+                    or
+                    <div class="line"><hr noshade color="#0D606F" size="1"></div>
+                </div>
+                <div class="data_for_login">
+                    <h4>E-mail</h4>
+                    <form>
+                        <input id="mail" type="text">
+                    </form>
+                </div>
+                <div class="data_for_login">
+                    <h4>Password</h4>
+                    <form>
+                        <input id="password" type="password">
+                    </form>
+                </div>
+                <form>
+                    <button id ='btnSign' class="btn_sign_in" type="button">Sign In</button>
+                </form>
+                <p class="text_pop_up login"><a href="">Forgot Your Password?</a></p>
+                <div class="line_in_bot"><hr noshade color="#0D606F" size="1"></div>
+                <p class="text_pop_up login">Don't have an account? <a id="link_pop_up" href="">Register</a></p>
+                <p class="text_pop_up register">Already have an account? <a id="link_pop_up_log" href="">Log in</a></p>
+            </div>
+        </div>
         <section class="preview">
             <h1>Explore the beauty of the World</h1>
             <p>Receive personalized recommendations for countries, hotels, activities and more</p>
             <div class="search">
                 <form>
                     <input class="text_start" type="text" placeholder="What would you like to do?">
-                    <button class="btn_start">Start Planning</button>
+                    <button class="btn_start" type="button">Start Planning</button>
                 </form>
             </div>
         </section>
     </div>
     <main>
-        <section class="steps">
-            <h2 class="headline" id="plan_trip">3 steps to the perfect trip</h2>
+        <section class="steps" id="plan_trip">
+            <h2 class="headline">3 steps to the perfect trip</h2>
             <div class="steps_of_trip">
                 <div class="card">
                     <div>
@@ -88,10 +128,12 @@
                 </div>
                 <div class="place">
                     <img class="place_desktop" src="img/Rectangle24.jpg" alt="Japan">
+                    <!--<img class="place_mob" src="img/Rectangle34mob.png" alt="Spain">-->
                     <p>Japan</p>
                 </div>
                 <div class="place">
                     <img class="place_desktop" src="img/Rectangle25.jpg" alt="USA">
+                    <!--<img class="place_mob" src="img/Rectangle35mob.jpg" alt="USA">-->
                     <p>USA</p>
                 </div>
                 <img class="left_vector" src="img/left.svg" alt="left vector">
@@ -101,15 +143,21 @@
                     <input type="radio" name="places">
                     <input type="radio" name="places">
                 </form>
+                
+            </div>
+            <div class="area">
+                <button id="invisible_right"></button>
+                <button id="invisible_left"></button>
             </div>
             <form class="btn_radio_desktop">
-                <input type="radio" name="places">
-                <input type="radio" name="places" checked>
-                <input type="radio" name="places">
+                <input class="radio_desk" id="#1" type="radio" name="places_dsk">
+                <input class="radio_desk" id="#2" type="radio" name="places_dsk" checked>
+                <input class="radio_desk" id="#3" type="radio" name="places_dsk">
             </form>
-        </section> 
+        </section>
+         
         <form>
-            <button class="btn_find_more"><img src="img/vector.svg" alt="vector"><span>Find More</span></button>
+            <button id = find class="btn_find_more" type="button"><img src="img/vector.svg" alt="vector"><span>Find More</span></button>
         </form>
         <div class="headline_and_stories">
             <h2 class="headline" id="stories">Travel stories</h2>
@@ -184,7 +232,7 @@
                         </div>
                     </div>
                     <form>
-                        <button class="btn_find_more"><img src="img/vector.svg" alt="vector"><span>See More</span></button>
+                        <button class="btn_find_more" type="button"><img src="img/vector.svg" alt="vector"><span>See More</span></button>
                     </form>
                 </section>
                 <footer>
