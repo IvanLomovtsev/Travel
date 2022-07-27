@@ -30,9 +30,9 @@ document.getElementById('link_pop_up').addEventListener('click',function (e) {
     for (let i=0; i<document.getElementsByClassName('login').length; i++){
         document.getElementsByClassName('login')[i].style.display = "none";
     }  
-    document.getElementsByClassName('register')[0].style.display = "block";
-      
-    document.getElementsByClassName('register')[1].style.display = "block";
+    for (let y=0; y<document.getElementsByClassName('register').length; y++){
+        document.getElementsByClassName('register')[y].style.display = "block";
+    }
     document.getElementById('link_pop_up').style.display = "none";
     document.getElementsByClassName('line_in_bot')[0].style.margin = "20px auto auto auto";
     if( window.innerWidth < 1300 ){
@@ -55,8 +55,6 @@ document.getElementById('link_pop_up').addEventListener('click',function (e) {
     } 
     m.preventDefault();
 })*/
-
-
 
 
 let offset = 0;
@@ -86,4 +84,30 @@ document.getElementById('invisible_right').addEventListener('click', ()=>{
         check = 0;
     }
     document.getElementsByName('places_dsk')[check].checked = true;
+})
+
+check_mob = 0;
+document.getElementById('right').addEventListener('click', ()=>{
+    offset = offset + 400;
+    if (offset > 900) {
+        offset = 800;
+    }
+    sliderLine.style.left = -offset + 'px';
+    check_mob = check_mob + 1;
+    if (check_mob > 2) {
+        check_mob = 2;
+    }
+    document.getElementsByName('places_mob')[check_mob].checked = true;
+})
+document.getElementById('left').addEventListener('click', ()=>{
+    offset = offset - 400;
+    if (offset < -300) {
+        offset = 0;
+    }
+    sliderLine.style.left = -offset + 'px';
+    check_mob = check_mob - 1;
+    if (check_mob < 0) {
+        check_mob = 0;
+    }
+    document.getElementsByName('places_mob')[check_mob].checked = true;
 })
