@@ -1,5 +1,5 @@
 # Travel
-================================================
+----------------------
 Travel is a JS / FE Pre-School 2022Q2 course from The Rolling Scopes task during which I designed the landing page of a travel planning site, made it adaptive and interactive.
 ### Key skills I gained during this assignment:
 * valid semantic sensitivity layout;
