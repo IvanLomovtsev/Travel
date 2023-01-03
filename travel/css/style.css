@@ -47,6 +47,7 @@ nav ul {
     align-items: center;
 }
 nav ul a {
+    padding-right: 5px;
     color: #FFFFFF;
     font-family: 'Red Hat Text', sans-serif;
     font-size: 1em;
@@ -231,7 +232,7 @@ nav a:hover {
     width: 100%;
     height: 100%;
     position: absolute;
-    top:-1000px;
+    top:-1200px;
     left:0;
     transition: all 1s linear;
 }
@@ -759,12 +760,14 @@ nav a:hover {
     height: 100%;
     background: none;
     border: none;
+    cursor: pointer;
 }
 #invisible_right {
     width:19%;
     height: 100%;
     background: none;
     border: none;
+    cursor: pointer;
 }
 .place_mob {
     display: none;
@@ -808,8 +811,7 @@ nav a:hover {
     }
 }
 .btn_radio_desktop {
-    width: 80px;
-    height: 20px;
+    width: 6%;
     margin-top: 1.2%;
     margin-bottom: 2.9%;
     display: flex;
@@ -825,8 +827,8 @@ nav a:hover {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    width: 20px;
-    height: 20px;
+    width: 25%;
+    padding: 12.5% 0;
     margin: 0;
     border-radius: 50%;
     background-color: rgba(242, 120, 92, 50%);
@@ -843,18 +845,8 @@ nav a:hover {
 .btn_radio_mobile {
     display: none;
 }
-@media screen and (max-width: 1390px) and (min-width: 391px) {
-    .btn_radio_desktop {
-        width: 10vw;
-    }
-    .btn_radio_desktop input {
-        width: 2vw;
-        height: 2vw;
-    }
-}
 .btn_find_more {
     width: 228px;
-    height: 59px;
     color: #FFFFFF;
     font-family: 'Red Hat Text', sans-serif;
     font-size: 24px;
@@ -870,7 +862,7 @@ nav a:hover {
     justify-content: space-between;
     align-items: center;  
     margin: 0 auto 2.5% auto;
-    padding: 2% 2.45%;  
+    padding: 1% 2.45%;  
 }
 .btn_find_more:hover {
     background-color: #17444b;
@@ -881,9 +873,20 @@ nav a:hover {
 .btn_find_more img {
     width: 25%;
 }
-@media screen and (max-width: 1390px) and (min-width: 391px) {
+@media screen and (max-width: 1390px) and (min-width: 751px) {
+    .btn_find_more {
+        font-size: 1.5em;
+    }
+}
+@media screen and (max-width: 750px) and (min-width: 601px) {
     .btn_find_more {
         width: 20vw;
+        font-size: 0.7em;
+    }
+}
+@media screen and (max-width: 600px) and (min-width: 391px) {
+    .btn_find_more {
+        width: 25vw;
         font-size: 0.7em;
     }
 }
@@ -940,7 +943,7 @@ nav a:hover {
     .btn_find_more {
         width: 92px;
         height: 30px;
-        font-size: 11px;
+        font-size: 0.7em;
     }
     .btn_find_more img {
         width: 20%;
