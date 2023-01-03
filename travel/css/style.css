@@ -847,7 +847,6 @@ nav a:hover {
 }
 .btn_find_more {
     width: 228px;
-    height: 59px;
     color: #FFFFFF;
     font-family: 'Red Hat Text', sans-serif;
     font-size: 24px;
@@ -863,7 +862,7 @@ nav a:hover {
     justify-content: space-between;
     align-items: center;  
     margin: 0 auto 2.5% auto;
-    padding: 2% 2.45%;  
+    padding: 1% 2.45%;  
 }
 .btn_find_more:hover {
     background-color: #17444b;
@@ -874,9 +873,20 @@ nav a:hover {
 .btn_find_more img {
     width: 25%;
 }
-@media screen and (max-width: 1390px) and (min-width: 391px) {
+@media screen and (max-width: 1390px) and (min-width: 751px) {
+    .btn_find_more {
+        font-size: 1.5em;
+    }
+}
+@media screen and (max-width: 750px) and (min-width: 601px) {
     .btn_find_more {
         width: 20vw;
+        font-size: 0.7em;
+    }
+}
+@media screen and (max-width: 600px) and (min-width: 391px) {
+    .btn_find_more {
+        width: 25vw;
         font-size: 0.7em;
     }
 }
@@ -933,7 +943,7 @@ nav a:hover {
     .btn_find_more {
         width: 92px;
         height: 30px;
-        font-size: 11px;
+        font-size: 0.7em;
     }
     .btn_find_more img {
         width: 20%;
