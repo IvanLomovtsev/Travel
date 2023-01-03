@@ -10,4 +10,4 @@ Travel is a JS / FE Pre-School 2022Q2 course from The Rolling Scopes task during
 2. I added adaptability to the layout page;
 3. I added an interactivity page using JavaScript: a slider in the "Popular Destinations" section and animated the Login button after clicking which should appear Login pop up and which will contain the form;
 ### Result
-The result is available at the following [link](https://rolling-scopes-school.github.io/ivanlomovtsev-JSFEPRESCHOOL2022Q2/travel/ "Travel")
+The result is available at the following [link](https://ivanlomovtsev.github.io/Travel/travel/ "Travel")
