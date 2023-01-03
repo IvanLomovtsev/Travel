@@ -760,12 +760,14 @@ nav a:hover {
     height: 100%;
     background: none;
     border: none;
+    cursor: pointer;
 }
 #invisible_right {
     width:19%;
     height: 100%;
     background: none;
     border: none;
+    cursor: pointer;
 }
 .place_mob {
     display: none;
@@ -809,8 +811,7 @@ nav a:hover {
     }
 }
 .btn_radio_desktop {
-    width: 80px;
-    height: 20px;
+    width: 6%;
     margin-top: 1.2%;
     margin-bottom: 2.9%;
     display: flex;
@@ -826,8 +827,8 @@ nav a:hover {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    width: 20px;
-    height: 20px;
+    width: 25%;
+    padding: 12.5% 0;
     margin: 0;
     border-radius: 50%;
     background-color: rgba(242, 120, 92, 50%);
@@ -843,15 +844,6 @@ nav a:hover {
 }
 .btn_radio_mobile {
     display: none;
-}
-@media screen and (max-width: 1390px) and (min-width: 391px) {
-    .btn_radio_desktop {
-        width: 10vw;
-    }
-    .btn_radio_desktop input {
-        width: 2vw;
-        height: 2vw;
-    }
 }
 .btn_find_more {
     width: 228px;
